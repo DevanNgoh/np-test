@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSSoG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+
+        <img src="pictures/GGSoG-logo.png" class="logo">
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
+            <a href="#" class="active-link">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="impact.html">Impact</a>
+
+            <!-- Mobile Support Button -->
+            <a href="contact.html" class="mobile-support">Contact</a>
+        </nav>
+
+        <div class="prim-btn">
+
+            <a href="contact.html" class="btn-primary">
+                Contact
+            </a>
+
+        </div>
+
+    </header>
+    <section class="hero">
+        <img src="pictures/environment" alt="">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>GLOBAL SOCIAL SOLUTIONS GATEWAY </h1>
+            <p>Driving inclusive empowerment through
+                social innovation, Technology, and sustainable community development.</p>
+
+        </div>
+        <div class="buttons">
+            <a href="about.html" class="btn-primary">Learn More</a>
+            <a href="project.html" class="btn-accent">Our Projects</a>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section light">
+        <div class="about-container">
+
+            <!-- TEXT -->
+            <div class="about-text">
+                <p class="section-tag">ABOUT US</p>
+                <h2>About Global Social Solutions Gateway</h2>
+
+                <p>
+                    Global Social Solutions Gateway (GSSoG) is an impact-driven
+                    organization committed to empowering vulnerable communities
+                    through innovation, technology, and sustainable development.
+                </p>
+
+                <p>
+                    Our work focuses on addressing critical social challenges by
+                    building systems that create opportunity, strengthen local
+                    economies, and promote long-term resilience.
+                </p>
+
+                <p>
+                    Through strategic initiatives in agriculture, digital
+                    transformation, and community development, we aim to create
+                    scalable solutions that uplift individuals and communities
+                    across Africa and beyond.
+                </p>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="about-image-wrapper">
+                <img src="pictures/field" alt="Pineapple plantation" class="about-image">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="initiative" class="section light">
+        <div class="initiative">
+            <p class="section-tag">OUR INITIATIVE</p>
+            <h2>Transforming Agriculture Into Opportunity</h2>
+
+            <p>
+                Cameroon currently loses up to 40% of its fruit harvest due to limited
+                processing capacity and inadequate storage systems. At the same time,
+                thousands of rural farmers lack access to structured markets and
+                sustainable income opportunities.
+            </p>
+
+            <p>
+                In response, GSSoG is developing a modern agro-processing and value-chain
+                system designed to transform locally grown fruits such as pineapples and
+                mangoes into high-quality products for both local and international markets.
+            </p>
+
+            <p>
+                This initiative will not only reduce post-harvest losses, but also create
+                employment, promote sustainable agricultural practices, and build a
+                self-sustaining economic model that directly benefits local communities.
+            </p>
+        </div>
+    </section>
+
+    <section class="section light">
+        <h2>Our Commitment</h2>
+
+        <div class="cards">
+            <div class="card glow">
+                <h3>🌍 Sustainable Development</h3>
+                <p>Aligning our work with long-term environmental and economic sustainability.</p>
+            </div>
+
+            <div class="card glow">
+                <h3>🤝 Community First</h3>
+                <p>Ensuring local communities are at the center of every solution we build.</p>
+            </div>
+
+            <div class="card glow">
+                <h3>📊 Transparency</h3>
+                <p>Maintaining accountability and measurable impact in all our programs.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <p>© 2026 GSSoG | Global Social Solutions Gateway</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+            document.querySelector(".hamburger").classList.toggle("active");
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

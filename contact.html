@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GSSoG</title>
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header class="navbar">
+
+        <img src="pictures/GGSoG-logo.png" class="logo">
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="impact.html">Impact</a>
+
+            <!-- Mobile Support Button -->
+            <a href="contact.html" class="mobile-support">Contact</a>
+        </nav>
+
+        <div class="prim-btn">
+
+            <a href="#" class="btn-primary" class="active-link">
+                Contact
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- HERO -->
+    <section class="contact-hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>
+                We'd love to hear from you. Whether you are a donor,
+                partner, volunteer, or community member, feel free
+                to reach out.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <!-- LEFT -->
+            <div class="contact-info">
+
+                <span class="section-tag">GET IN TOUCH</span>
+
+                <h2>Global Social Solutions Gateway</h2>
+
+                <div class="info-box">
+                    <h3>📍 Head Office</h3>
+                    <p>Upstation, Bamenda I Sub-Division</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>📍 Branch Office</h3>
+                    <p>Mvan, Yaoundé, Cameroon</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>📧 Email</h3>
+                    <p>gloriousglorytv@gmail.com</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>📞 Phone</h3>
+                    <p>+237 673 30 07 11</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>📄 Registration</h3>
+                    <p>Nº 002 /E.29/11/VOL.8/ALPAS A</p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="contact-form">
+
+                <h3>Send Us a Message</h3>
+
+                <form action="https://formsubmit.co/devan.ngoh2@gmail..com" method="POST">
+
+                    <!-- FormSubmit Settings -->
+                    <input type="hidden" name="_subject" value="New GSSoG Contact Form Submission">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Optional thank you page -->
+                    <!--
+        <input type="hidden" name="_next"
+            value="https://yourdomain.com/thankyou.html">
+        -->
+
+                    <input type="text" name="name" placeholder="Full Name" required>
+
+                    <input type="email" name="email" placeholder="Email Address" required>
+
+                    <input type="text" name="subject" placeholder="Subject" required>
+
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Global Social Solutions Gateway (GSSoG)
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+            document.querySelector(".hamburger").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

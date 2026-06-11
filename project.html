@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Project | GSSoG</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <img src="pictures/GGSoG-logo.png" class="logo">
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html" class="active-link">Project</a>
+            <a href="impact.html">Impact</a>
+
+            <!-- Mobile Support Button -->
+            <a href="contact.html" class="mobile-support">Contact</a>
+        </nav>
+
+        <div class="prim-btn">
+
+            <a href="contact.html" class="btn-primary">
+                Contact
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="project-hero">
+        <div class="project-overlay"></div>
+        <div class="project-hero-content">
+            <h1>Our Flagship Project</h1>
+            <p>Cameroon Quality Tropical Fruits Processing & Transformation Initiative</p>
+        </div>
+        <div class="buttons">
+            <a href="index.html" class="btn-accent">Back Home</a>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section light">
+
+        <div class="container split">
+
+            <!-- TEXT -->
+            <div class="text-side">
+                <p class="section-tag">PROJECT OVERVIEW</p>
+                <h2>Transforming Agriculture Into Opportunity</h2>
+
+                <p>
+                    Cameroon is rich in natural resources and agricultural potential, yet up to
+                    40% of fruit harvests are lost due to limited processing capacity and lack
+                    of structured value chains.
+                </p>
+
+                <p>
+                    The Global Social Solutions Gateway (GSSoG) is addressing this challenge
+                    through the establishment of a modern agro-processing and packaging system
+                    that transforms locally grown fruits such as pineapples and mangoes into
+                    high-quality products for both local and international markets.
+                </p>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="image-side">
+                <img src="pictures/pine-mango" alt="Pineapple Plantation" class="pine-image">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROBLEM -->
+
+
+    <!-- SOLUTION -->
+    <section class="section dark">
+        <div class="container split">
+
+            <!-- TEXT -->
+            <div class="text-side">
+                <p class="section-tag">THE CHALLENGE</p>
+                <h2>The Problem We Are Solving</h2>
+
+                <p>
+                    Despite strong agricultural output, many rural farmers lack access to
+                    markets, technology, and storage systems. This results in significant
+                    post-harvest losses and missed economic opportunities.
+                </p>
+
+                <p>
+                    At the same time, global demand for tropical fruit products continues
+                    to rise, creating a gap between supply potential and market access.
+                </p>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="image-side">
+                <img src="pictures/pine-plant.png" class="project-image">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BENEFICIARIES -->
+    <section class="section dark">
+        <p class="section-tag center">WHO BENEFITS</p>
+        <h2 class="center">Target Impact Groups</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>👩‍🌾 Women</h3>
+                <p>300–500 women gain employment, training, and financial independence.</p>
+            </div>
+
+            <div class="card">
+                <h3>👨‍💻 Youth</h3>
+                <p>150–250 young people trained in agribusiness and technology.</p>
+            </div>
+
+            <div class="card">
+                <h3>♿ Inclusion</h3>
+                <p>30–50 persons with disabilities integrated into meaningful work.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌍 Communities</h3>
+                <p>2,000+ people benefit through improved livelihoods and food security.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUSTAINABILITY -->
+    <section class="section light">
+        <div class="container narrow">
+            <p class="section-tag">SUSTAINABILITY</p>
+            <h2>A Self-Sustaining Model</h2>
+
+            <p>
+                The project is designed as a long-term, self-sustaining system. Revenue
+                generated from processed fruit sales is reinvested into community programs,
+                expansion, and local development.
+            </p>
+
+            <p>
+                By promoting organic farming, reducing waste, and improving efficiency,
+                the initiative ensures environmental sustainability while building economic
+                resilience.
+            </p>
+        </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact" class="section dark">
+        <p class="section-tag center">EXPECTED IMPACT</p>
+        <h2 class="center">Measurable Change</h2>
+
+        <div class="impact-grid">
+            <div>
+                <h2>40% → 10%</h2>
+                <p>Reduction in post-harvest losses</p>
+            </div>
+
+            <div>
+                <h2>1000+</h2>
+                <p>Jobs created</p>
+            </div>
+
+            <div>
+                <h2>5 Years</h2>
+                <p>Timeline for large-scale impact</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Be Part of the Change</h2>
+        <p>Help us transform agriculture into opportunity for communities in Cameroon.</p>
+        <a href="contact.html" class="btn-primary">Support This Project</a>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 GSSoG | Global Social Solutions Gateway</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+            document.querySelector(".hamburger").classList.toggle("active");
+        }
+    </script>
+
+
+
+</body>
+
+</html>

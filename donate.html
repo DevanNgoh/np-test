@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | GSSoG</title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <img src="pictures/GGSoG-logo.png" class="logo" alt="GSSoG Logo">
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="donate.html" class="active-link">Donate</a>
+        </nav>
+
+    </header>
+
+    <!-- DONATION FORM -->
+    <main>
+
+        <div class="container">
+
+            <h1>Support Our Mission</h1>
+
+            <p class="label">Select Gift Frequency</p>
+
+            <div class="time">
+                <span class="active-option">Monthly</span>
+                <span>One-Time</span>
+            </div>
+
+            <p class="label">Select Amount</p>
+
+            <div class="value">
+                <span class="money">$12</span>
+                <span class="money">$30</span>
+                <span class="money">$40</span>
+                <span class="money">$50</span>
+                <span class="money">$60</span>
+            </div>
+
+            <div class="confirm">
+                <input type="checkbox">
+                <span>
+                    Yes, I'll add $0.30 to help cover transaction costs.
+                </span>
+            </div>
+
+            <div class="input">
+
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+            </div>
+
+            <button class="donate-btn">
+                Donate Now
+            </button>
+
+            <p class="terms">
+                By donating, you agree to our
+                <span class="blue">Terms of Service</span>
+                and
+                <span class="blue">Privacy Policy</span>.
+            </p>
+
+        </div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+            document.querySelector(".hamburger").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
