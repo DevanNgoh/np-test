@@ -342,60 +342,12 @@ body {
 }
 
 .footer {
-    background: #06120e;
-    border-top: 1px solid rgba(255,255,255,.08);
-}
-
-.footer-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 1fr;
-    gap: 50px;
-    padding: 70px 10%;
-}
-
-.footer-column h3 {
-    color: #d4af37;
-    margin-bottom: 20px;
-}
-
-.footer-column p {
-    color: #cfcfcf;
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
-
-.footer-column a {
-    display: block;
-    color: #cfcfcf;
-    text-decoration: none;
-    margin-bottom: 12px;
-    transition: .3s;
-}
-
-.footer-column a:hover {
-    color: #d4af37;
-}
-
-.footer-logo {
-    width: 100px;
-    margin-bottom: 15px;
-}
-
-.reg {
-    margin-top: 15px;
-    font-size: .9rem;
-    color: #10B981;
-}
-
-.footer-bottom {
+    background: var(--dark);
+    color: white;
     text-align: center;
-    padding: 25px;
-    border-top: 1px solid rgba(255,255,255,.08);
+    padding: 20px;
 }
 
-.footer-bottom p {
-    color: #999;
-}
 
 @media(max-width:768px) {
 
