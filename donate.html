@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate | GSSoG</title>
     <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
-
         <img src="pictures/GGSoG-logo.png" class="logo" alt="GSSoG Logo">
 
         <div class="hamburger" onclick="toggleMenu()">
@@ -27,12 +26,9 @@
             <a href="project.html">Project</a>
             <a href="donate.html" class="active-link">Donate</a>
         </nav>
-
     </header>
 
-    <!-- DONATION FORM -->
     <main>
-
         <div class="container">
 
             <h1>Support Our Mission</h1>
@@ -40,14 +36,14 @@
             <p class="label">Select Gift Frequency</p>
 
             <div class="time">
-                <span class="active-option">Monthly</span>
-                <span>One-Time</span>
+                <span class="active-option" id="monthlyBtn">Monthly</span>
+                <span id="onetimeBtn">One-Time</span>
             </div>
 
             <p class="label">Select Amount</p>
 
             <div class="value">
-                <span class="money">$12</span>
+                <span class="money selected">$12</span>
                 <span class="money">$30</span>
                 <span class="money">$40</span>
                 <span class="money">$50</span>
@@ -56,41 +52,107 @@
 
             <div class="confirm">
                 <input type="checkbox">
-                <span>
-                    Yes, I'll add $0.30 to help cover transaction costs.
-                </span>
+                <span>Yes, I'll add $0.30 to help cover transaction costs.</span>
             </div>
 
             <div class="input">
-
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name">
 
                 <label>Email</label>
                 <input type="email" placeholder="Enter your email">
-
             </div>
 
-            <button class="donate-btn">
+            <button class="donate-btn" id="donateButton">
                 Donate Now
             </button>
 
             <p class="terms">
                 By donating, you agree to our
-                <span class="blue">Terms of Service</span>
+                <a href="terms.html" class="blue">Terms of Service</a>
                 and
-                <span class="blue">Privacy Policy</span>.
+                <a href="privacy.html" class="blue">Privacy Policy</a>.
             </p>
 
         </div>
-
     </main>
 
     <script>
+
+        // Replace these with your actual Stripe Payment Links
+        const monthlyLinks = {
+            "$12": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$30": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$40": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$50": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$60": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00"
+        };
+
+        const oneTimeLinks = {
+            "$12": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$30": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$40": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$50": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00",
+            "$60": "https://buy.stripe.com/test_3cI8wI2le0xWfpU8DnabK00"
+        };
+
+        let frequency = "monthly";
+        let selectedAmount = "$12";
+
+        // Select amount
+        document.querySelectorAll(".money").forEach(item => {
+            item.addEventListener("click", () => {
+
+                document.querySelectorAll(".money")
+                    .forEach(m => m.classList.remove("selected"));
+
+                item.classList.add("selected");
+                selectedAmount = item.textContent;
+            });
+        });
+
+        // Monthly
+        document.getElementById("monthlyBtn").addEventListener("click", () => {
+            frequency = "monthly";
+
+            document.getElementById("monthlyBtn")
+                .classList.add("active-option");
+
+            document.getElementById("onetimeBtn")
+                .classList.remove("active-option");
+        });
+
+        // One Time
+        document.getElementById("onetimeBtn").addEventListener("click", () => {
+            frequency = "onetime";
+
+            document.getElementById("onetimeBtn")
+                .classList.add("active-option");
+
+            document.getElementById("monthlyBtn")
+                .classList.remove("active-option");
+        });
+
+        // Donate button
+        document.getElementById("donateButton")
+            .addEventListener("click", () => {
+
+                let link;
+
+                if (frequency === "monthly") {
+                    link = monthlyLinks[selectedAmount];
+                } else {
+                    link = oneTimeLinks[selectedAmount];
+                }
+
+                window.location.href = link;
+            });
+
         function toggleMenu() {
             document.getElementById("navMenu").classList.toggle("show");
             document.querySelector(".hamburger").classList.toggle("active");
         }
+
     </script>
 
 </body>
