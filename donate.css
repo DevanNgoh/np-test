@@ -176,14 +176,15 @@ main {
     transition: 0.3s;
 }
 
-.time span:hover {
-    border-color: var(--green);
+.time span {
+    user-select: none;
 }
 
 .active-option {
     background: var(--gold);
     color: #000;
-    border-color: var(--gold);
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
 }
 
 /* DONATION AMOUNTS */
