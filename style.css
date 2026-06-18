@@ -185,6 +185,7 @@ body {
     border-radius: 8px;
     font-weight: 600;
     transition: 0.3s;
+    text-align: center;
 }
 
 .btn-primary:hover {
