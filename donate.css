@@ -524,3 +524,167 @@ main {
         font-size: 1.2rem;
     }
 }
+
+/* ================= HERO ================= */
+
+.donate-hero{
+    position:relative;
+    min-height:65vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0b6e4f,#0a3d2c);
+    overflow:hidden;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:900px;
+}
+
+.hero-content h1{
+    color:var(--gold);
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#eee;
+    margin-bottom:50px;
+}
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.1);
+    padding:25px;
+    border-radius:18px;
+    min-width:170px;
+}
+
+.stat-box h2{
+    color:var(--gold);
+    font-size:2.2rem;
+}
+
+.stat-box span{
+    color:#ddd;
+}
+
+/* ================= IMPACT ================= */
+
+.impact-section{
+    padding:100px 20px;
+    background:#091811;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    color:var(--gold);
+    font-size:2.4rem;
+}
+
+.section-title p{
+    color:#bdbdbd;
+}
+
+.impact-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.impact-card{
+    background:var(--bg-card);
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+}
+
+.impact-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 35px rgba(0,0,0,.3);
+}
+
+.impact-icon{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.impact-card h3{
+    color:var(--gold);
+    margin-bottom:15px;
+}
+
+/* ================= FAQ ================= */
+
+.faq-section{
+    padding:90px 20px;
+    background:#0b2e23;
+}
+
+.faq{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq details{
+    background:#102f25;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    margin-bottom:18px;
+    padding:20px;
+}
+
+.faq summary{
+    cursor:pointer;
+    color:var(--gold);
+    font-weight:700;
+    font-size:18px;
+}
+
+.faq p{
+    margin-top:15px;
+    color:#ddd;
+    line-height:1.7;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+    }
+
+    .stat-box{
+        width:100%;
+    }
+}
